@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='wild_requests',
-    version='Beta 1.0.0',
+    version='0.0.1',
     packages=find_packages(),
     url='https://github.com/taux1c/wild_requests',
     author='Taux1c',
