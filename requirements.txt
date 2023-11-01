@@ -1,0 +1,2 @@
+setuptools~=65.5.1
+httpx~=0.25.0
