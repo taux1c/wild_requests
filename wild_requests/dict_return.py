@@ -20,7 +20,7 @@ async def bulk_request(what: dict, headers=None, method=None) -> dict[id:httpx.R
             session.headers.update(headers)
         async for k,v in make_async(what):
             # Logic can go here for each method type.
-            response = session.get(v)
+            response = await session.get(v)
             new_dict = {k:response}
             dict_to_return.update(new_dict)
 

@@ -26,7 +26,7 @@ async def bulk_request(what, method=None, headers=None):
                 session.headers.update(headers)
             async for k,v in make_async(what):
                 # Can add logic here for additional methods.
-                response = session.get(v)
+                response = await session.get(v)
                 if k:
                     if v:
                         yield k,response
@@ -37,5 +37,5 @@ async def bulk_request(what, method=None, headers=None):
                 session.headers.update(headers)
             async for x in make_async(what):
                 # Can add logic here for additional method support.
-                response = session.get(x)
+                response = await session.get(x)
                 yield response
