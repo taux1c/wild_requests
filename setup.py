@@ -6,6 +6,7 @@ setup(
     packages=find_packages(),
     url='https://github.com/taux1c/wild_requests',
     author='Taux1c',
+    install_requires=['httpx~=0.25.0'],
     description='Just a module that provides some tools for downloading.',
     long_description="""Long Description:
 -----------------
